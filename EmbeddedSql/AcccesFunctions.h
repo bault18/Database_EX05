@@ -136,7 +136,7 @@ string EX04()
 {
 	string query = "SELECT [Product Name] ";
 	query += "FROM Products ";
-	query += "WHERE [Product Name] Like '*dried*'; ";
+	query += "WHERE INSTR([Product Name], 'Dried'); ";
 
 	cout << "Query: " << query << endl << endl;
 	cout << "Results: " << endl;
